@@ -1,0 +1,695 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+ background: url("image/oval.jpeg") no-repeat center center/cover;
+  color: #000;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  width: 100%;
+  padding: 15px 30px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+.logo h1{
+  font-style: italic;
+  color: rgb(114, 103, 103);
+}
+
+.logo img {
+  max-width: 15%;
+  min-height: 8%;
+  border-radius: 15%;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+  color: #574318;
+}
+.btn-quote {
+  background-color: #574318;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-quote:hover {
+  background-color: #000;
+}
+
+/* Menu icon for small screens */
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #e0e0e0;
+}
+
+/* Parallax Background */
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("image/open.jpg") no-repeat center center/cover;
+  background-attachment: fixed;
+  padding-top: 90px;
+}
+
+/* Content Styling with Blur Background */
+.landing .content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  text-align: center;
+  color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  background: rgba(158, 144, 144, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Text Styling */
+.landing h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.landing p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Call-to-Action Button */
+.landing .btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #3a3a3a;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.landing .btn:hover {
+  background-color: #695530;
+  transform: scale(1.1);
+}
+
+/* Floating Image Animation */
+.landing .image {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  width: 300px;
+  animation: floatUpDown 3s infinite alternate ease-in-out;
+}
+
+.landing .image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Parallax Effect */
+@media (max-width: 768px) {
+  .landing {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .landing .image {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    width: 250px;
+  }
+}
+
+/* Keyframes for Floating Image */
+@keyframes floatUpDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+/* Keyframes for Fade In */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #1b1b1b;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    padding: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+.about-section {
+  padding: 100px 20px;
+  background: url("image/chair.jpeg") no-repeat center center/cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 38px;
+  font-weight: 700;
+  color: #1c3d5a;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* About Content */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto 60px;
+}
+
+/* About Text */
+.about-text {
+  width: 50%;
+  text-align: left;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* About Image */
+.about-image {
+  width: 50%;
+  min-height: 20%;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Mission & Vision Section */
+.mission-vision {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.mission,
+.vision {
+  flex: 1;
+  backdrop-filter: blur(15px);
+  /* Blur effect */
+  background: rgba(56, 53, 53, 0.15);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission:hover,
+.vision:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Mission & Vision Titles */
+.mission h3,
+.vision h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1c3d5a;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* Mission & Vision Text */
+.mission p,
+.vision p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-content {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .about-text,
+  .about-image {
+      width: 100%;
+  }
+
+  .mission-vision {
+      flex-direction: column;
+  }
+}
+
+ /* Contact Us Section */
+ .contact-section {
+  padding: 100px 20px;
+  background: linear-gradient(to right, #ffffff, #e9ecef);
+  text-align: center;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 38px;
+  font-weight: 700;
+  color: #1c3d5a;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Contact Content */
+.contact-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto 60px;
+}
+
+/* Contact Form */
+.contact-form,
+.contact-info {
+  flex: 1;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form:hover,
+.contact-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.contact-form h3,
+.contact-info h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1c3d5a;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #1c3d5a;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #144b6d;
+}
+
+/* Contact Info */
+.contact-info p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Google Map */
+.map-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-content {
+      flex-direction: column;
+  }
+
+  .contact-form,
+  .contact-info {
+      width: 100%;
+  }
+}
+
+
+
+
+/* Menu Section */
+.menu-section {
+  max-width: 1200px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+/* Section Title */
+.menu-title {
+  font-size: 2.5rem;
+  color: #4a3f35;
+  margin-bottom: 20px;
+}
+
+/* Grid Layout */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Menu Item Card */
+.menu-item {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.menu-item h3 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+  color: #4a3f35;
+}
+
+.menu-item p {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Price Tag */
+.price {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #d2691e;
+  margin: 10px 0;
+}
+
+/* Order Button */
+.order-btn {
+  background-color: #d2691e;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.order-btn:hover {
+  background-color: #a0522d;
+}
+
+.projects {
+  padding: 100px 0;
+  background: url("image/livingroom\ divider.jpeg") no-repeat center center/cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Project Row Layout */
+.project {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 60px;
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  background: rgba(56, 53, 53, 0.15);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Alternating Layout */
+.project:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* Project Image */
+.project img {
+  width: 50%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Project Info */
+.project-info {
+  width: 50%;
+  text-align: left;
+}
+
+.project-info h3 {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Modern Button */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .project img,
+  .project-info {
+    width: 100%;
+  }
+}
+
+ /* Footer */
+ .footer {
+  background: #4b3621;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Footer Logo */
+.footer-logo h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-size: 14px;
+  color: #ddd;
+}
+
+/* Footer Links */
+.footer-links h4,
+.footer-contact h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 5px 0;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #f4b400;
+}
+
+/* Footer Contact */
+.footer-contact p {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #ddd;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+      flex-direction: column;
+      text-align: center;
+  }
+}
