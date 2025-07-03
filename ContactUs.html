@@ -12,6 +12,15 @@
     </style>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="script.js"></script>
+    <script>
+    const menuIcon = document.getElementById('menuIcon');
+    const navLinks = document.getElementById('navLinks');
+
+    menuIcon.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
+
 </head>
 <body>
     <header>

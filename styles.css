@@ -693,3 +693,34 @@ textarea {
       text-align: center;
   }
 }
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        left: 0;
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        cursor: pointer;
+    }
+}
