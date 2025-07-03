@@ -1,94 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kaizen</title>
-  <link rel="stylesheet" href="styles.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kaizen</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
-  <!-- FontAwesome -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
+
 <body>
-  <header>
-    <div class="logo">
-      <h1>Kaizen</h1>
-      <h3>The Group Of Improving!.</h3>
-    </div>
-    <nav class="nav-links" id="navLinks">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="Services.html">Services</a></li>
-        <li><a href="AboutUs.html">About Us</a></li>
-        <li><a href="ContactUs.html">Contact Us</a></li>
-      </ul>
-    </nav>
-     <div class="menu-icon" id="menuIcon">
-            <i name='menu-alt-right'></i>
+    <header>
+        <div class="logo">
+            <h1>Kaizen </h1><h3>The Group Of Improving!.</h3>
         </div>
-  </header>
+        <nav class="nav-links" id="navLinks">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
 
-  <!-- Landing Section -->
-  <section id="home" class="landing">
-    <div class="content">
-      <h1>Your favorite furniture store</h1>
-      <p>Furnishing dreams, without breaking the bank.</p>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Featured Products</h2>
-
-      <div class="project" data-aos="fade-up">
-        <img src="image/pillow.jpeg" alt="cushions" />
-        <div class="project-info">
-          <h3>Pottery Barn Belgian Linen Cushions</h3>
-          <p>Where comfort meets enduring style.</p>
+        <div class="menu-icon" id="menuIcon">
+            <box-icon name='menu-alt-right'></box-icon>
         </div>
-      </div>
+    </header>
 
-      <div class="project reverse" data-aos="fade-up">
-        <img src="image/boneless.jpeg" alt="couch" />
-        <div class="project-info">
-          <h3>Vetsak Modular Couch</h3>
-          <p>Your comfort corner redefined.</p>
+    <!-- Landing Section -->
+    <section id="home" class="landing">
+        <div class="content">
+            <h1>your favorite furniture store</h1>
+            <p>Furnishing dreams, without breaking the bank.</p>
+          
         </div>
-      </div>
 
-      <div class="project" data-aos="fade-up">
-        <img src="image/leaves wallpaper.jpeg" alt="wallpaper" />
-        <div class="project-info">
-          <h3>Paradise Wallpaper</h3>
-          <p>Where your walls are attractive.</p>
+
+    </section>
+    <!-- Add AOS Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+
+
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured products</h2>
+
+            <div class="project">
+                <img src="image/pillow.jpeg" alt="cushions">
+                <div class="project-info">
+                    <h3>Pottery Barn Belgain linen cushions</h3>
+                    <p>Where Comfort meets enduring style.</p>
+                   
+                </div>
+            </div>
+
+            <div class="project reverse">
+                <img src="image/boneless.jpeg" alt="couch">
+                <div class="project-info">
+                    <h3>Vetsak modular couch</h3>
+                    <p>Your comfort corner redefined.</p>
+                    
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="image/leaves wallpaper.jpeg" alt="wallpaper">
+                <div class="project-info">
+                    <h3>Paradise wallpaper</h3>
+                    <p>Where your walls are attractive .</p>
+                    
+                </div>
+            </div>
+
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- AOS Script -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000,
-      once: true
-    });
-  </script>
-
-  <!-- Menu Toggle Script -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const menuIcon = document.getElementById("menuIcon");
-      const navLinks = document.getElementById("navLinks");
-
-      menuIcon.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-      });
-    });
-  </script>
+    
+    </footer>
 </body>
+
 </html>

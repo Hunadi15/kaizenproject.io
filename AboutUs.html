@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <style>
+        .menu-sectio {
+            padding-top: 100px;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,55 +27,63 @@
                 <li><a href="ContactUs.html">Contact Us</a></li>
             </ul>
         </nav>
-         <div class="menu-icon" id="menuIcon">
-            <i name='menu-alt-right'></i>
+
+        <div class="menu-icon" id="menuIcon">
+            <box-icon name='menu-alt-right'></box-icon>
         </div>
     </header>
+
     <section class="about-section">
         <div class="container">
             <h2 class="section-title" data-aos="fade-down">About Us</h2>
+
             <div class="about-content">
                 <div class="about-text" data-aos="fade-right">
                     <p><br> Kaizen The Group of Improving is a strong brand that has <br>
-                    made its mission to be the exact equivalent of comfort in <br>
-                    every office and house it visits and to offer the right<br> solutions 
-                    to its clients. We listen, we care and <br>we continue to uphold 
-                    our long standing tradition of<br> not only meeting but exceeding 
-                    our customer's expectations.<br> We offer a broad range of supplies 
-                    for your specific needs.<br> We also remain in step with changes in 
-                    our marketplace.<br> Kaizen The Group of Improving do things 
-                    differently.<br> We treat our customers differently, as individuals, <br>
-                    catering for their individual needs while striving to contain costs. <br>
-                    We always strive to provide our clients with the best quality <br>
-                    products at the lowest prices. To us, customer's focus covers 
-                    everything<br> from product quality to prompt delivery, after-sales
-                    service,<br> professional expertise and advice.</p>
+         made its mission to be the exact equivalent of comfort in <br>
+         every office and house it visits and to offer the right<br> solutions 
+          to its clients. We listen, we care and <br>we continue to uphold 
+        our long standing tradition of<br> not only meeting but exceeding 
+our customer's expectations.<br> We offer a broad range of supplies 
+for your specific needs.<br> We also remain in step with changes in 
+our marketplace.<br> Kaizen The Group of Improving do things 
+differently.<br> We treat our customers differently, as individuals, <br>
+catering for their individual needs while striving to contain costs. <br>
+We always strive to provide our clients with the best quality <br>
+products at the lowest prices. To us, customer's focus covers 
+everything<br> from product quality to prompt delivery, after-sales
+ service,<br> professional expertise and advice.</p>
                 </div>
+
                 <div class="about-image" data-aos="fade-left">
                     <img src="image/art.jpeg" alt="Urban Planning">
                 </div>
             </div>
+
             <div class="mission-vision">
                 <div class="mission" data-aos="zoom-in-up">
                     <h3>Our Mission</h3>
                     <p>To increase the quality of life of our 
-                        clients by offering designs with ideas 
-                        in their living spaces and to bring the 
-                        furniture trends of the changing world 
-                        together with our clients in the
-                         most up-to-date form</p>
+clients by offering designs with ideas 
+in their living spaces and to bring the 
+furniture trends of the changing world 
+together with our clients in the
+ most up-to-date form</p>
                 </div>
+
                 <div class="vision" data-aos="zoom-in-up" data-aos-delay="200">
                     <h3>Our Vision</h3>
                     <p>
-                        To bring together the most trendy 
-                        products and to present our designs 
-                        to the world's appreciation by creating 
-                        a global network.</p>
+ To bring together the most trendy 
+products and to present our designs 
+to the world's appreciation by creating 
+a global network.</p>
                 </div>
+
             </div>
         </div>
     </section>
+
     <script>
         // Initialize AOS animations
         AOS.init({
@@ -81,6 +91,8 @@
             once: true,
         });
     </script>
+
+
     <!-- Footer Section -->
     <footer class="footer">
         <div class="container">
@@ -89,6 +101,7 @@
                     <h3>Kaizen!</h3>
                     <p>The Group of Improving.</p>
                 </div>
+
                 <div class="footer-links" data-aos="fade-up">
                     <h4>Quick Links</h4>
                     <ul>
@@ -98,22 +111,23 @@
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-contact" data-aos="fade-left">
-                    <h2>Contact Us</h2>
-                    <p><a href="mailto:kaizenthegroupofimproving@gmail.com">Email </a></p>
-                    <p>Phone: +27 65 933 1861</p>
-                    <p>WhatsApp: <a href="https://wa.me/27659331861" target="_blank">Chat with us</a></p>
-                    <p>Location: 3 Dublin Rd, Bramley View, Johannesburg</p>
+                      <h2>Contact Us</h2>
+        <p><a href="mailto:kaizenthegroupofimproving@gmail.com">Email </a></p>
+        <p>Phone: +27 65 933 1861</p>
+        <p>WhatsApp: <a href="https://wa.me/27659331861" target="_blank">Chat with us</a></p>
+        <p>Location: 3 Dublin Rd, Bramley View, Johannesburg</p>
                 </div>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <p>© <span id="year"></span> Kaizen. All Rights Reserved.</p>
-                <script>
-                document.getElementById("year").textContent = new Date().getFullYear();
-                </script>
+                <p>© 2022 kaizen The Group Of Improving!. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
+
 </body>
+
 </html>
