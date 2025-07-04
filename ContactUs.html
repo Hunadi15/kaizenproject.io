@@ -12,6 +12,7 @@
     </style>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="script.js"></script>
 
 
@@ -21,9 +22,7 @@
         <div class="logo">
             <h1>Kaizen </h1><h3>The Group Of Improving!.</h3>
         </div>
-           <div class="menu-icon" id="menuIcon">
-            <box-icon name='menu-alt-right'></box-icon>
-        </div>
+        <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">☰</div>
         <nav class="nav-links" id="navLinks">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -126,16 +125,11 @@
                 </div>
             </div>
         </footer>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const menuIcon = document.getElementById('menuIcon');
-        const navLinks = document.getElementById('navLinks');
-
-        menuIcon.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-    });
-</script>
+        <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+  </script>
 
 </body>
 </html>
