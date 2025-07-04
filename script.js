@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     menuIcon.addEventListener('click', () => {
         navLinks.classList.toggle('active');
     });
+    
 
     // Initialize EmailJS
     emailjs.init("biVoV0ngVLFgW30Fj");
